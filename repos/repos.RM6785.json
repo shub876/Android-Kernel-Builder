@@ -1,17 +1,17 @@
 [
   {
     "kernelSource": {
-      "name": "RM6785_Proton",
-      "repo": "https://github.com/AbzRaider/android_kernel_realme_mt6785.git",
-      "branch": "lineage-plus",
+      "name": "Experimento",
+      "repo": "https://github.com/realme-mt6785-devs/android_kernel_realme_mt6785.git",
+      "branch": "lineage-20",
       "device": "RM6785",
       "defconfig": "RM6785_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://github.com/kdrag0n/proton-clang",
-        "branch": "master",
+        "repo": "https://gitlab.com/LeCmnGend/proton-clang.git",
+        "branch": "clang-16",
         "name": "proton-clang",
         "binPath": ["./bin"]
       }
@@ -39,8 +39,8 @@
     "AnyKernel3": {
       "use": true,
       "release": true,
-      "repo": "https://github.com/AbzRaider/AnyKernel33.git",
-      "branch": "master"
+      "repo": "https://github.com/AbzRaider/AnyKernel33",
+      "branch": "lp-rm6785"
     }
   }
 ]
