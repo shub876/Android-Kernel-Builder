@@ -37,10 +37,10 @@
       }
     },
     "AnyKernel3": {
-      "use": false,
-      "release": false,
-      "repo": "https://github.com/easterNday/AnyKernel3/",
-      "branch": "thyme"
+      "use": true,
+      "release": true,
+      "repo": "https://github.com/AbzRaider/AnyKernel33.git",
+      "branch": "master"
     }
   }
 ]
