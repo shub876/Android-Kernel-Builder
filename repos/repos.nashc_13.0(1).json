@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "LMAO",
-      "repo": "https://github.com/shub876/android_kernel_realme_nashc.git",
-      "branch": "13.0",
+      "repo": "https://github.com/shub876/realme_8-4G-AndroidT-kernel-source.git",
+      "branch": "master",
       "device": "nashc",
-      "defconfig": "k85v1_64_defconfig"
+      "defconfig": "k6885v1_64_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
