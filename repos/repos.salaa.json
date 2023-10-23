@@ -10,8 +10,8 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/LeCmnGend/proton-clang.git",
-        "branch": "clang-16",
+        "repo": "https://github.com/rama982/clang.git",
+        "branch": "master",
         "name": "proton-clang",
         "binPath": ["./bin"]
       }
@@ -39,8 +39,8 @@
     "AnyKernel3": {
       "use": false,
       "release": false,
-      "repo": "https://github.com/shub876/AnyKernel33.git",
-      "branch": "lp-rm6785"
+      "repo": "https://github.com/AbzRaider/AnyKernel_RMX2001.git",
+      "branch": "RMX2151"
     }
   }
 ]
