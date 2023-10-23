@@ -216,6 +216,13 @@ jobs:
 
       - name: "🎶 Build kernel"
         working-directory: ${{ env.KERNEL_NAME }}
+        run: |
+          echo "PATH Variable: $PATH"
+          chmod +x build.sh
+          bash build.sh
+
+      - name: "🎶 Build kernel"
+        working-directory: ${{ env.KERNEL_NAME }}
         env:
           args: ${{ steps.generate-args.outputs.args }}
         run: |
@@ -285,12 +292,6 @@ jobs:
 
           cd AnyKernel3/
           zip -q -r "${{ env.anykernel }}.zip" *
-          curl --upload-file "${{ env.anykernel }}.zip" https://free.keep.sh
-          compile
-          zupload
-          cd ${{ env.KERNEL_NAME }}
-          chmod +x build.sh
-          bash build.sh
 
       - name: "💾 Upload AnyKernel3 image => (${{ env.builddate }})"
         uses: actions/upload-artifact@v3
