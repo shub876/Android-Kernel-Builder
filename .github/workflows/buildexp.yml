@@ -220,6 +220,3 @@ jobs:
           echo "PATH Variable: $PATH"
           chmod +x build.sh
           bash build.sh
-          tag_name: v${{ env.builddate }}.${{ github.run_number }}
-          files: "${{ env.WORKSPACE }}/${{ env.KERNEL_DEVICE }}-${{ env.KERNEL_NAME }}_${{ env.builddate }}.zip"
-          generate_release_notes: true
