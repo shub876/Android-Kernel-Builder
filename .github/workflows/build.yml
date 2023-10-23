@@ -285,9 +285,6 @@ jobs:
 
           cd AnyKernel3/
           zip -q -r "${{ env.anykernel }}.zip" *
-          curl --upload-file "${{ env.anykernel }}.zip" https://free.keep.sh
-          compile
-          zupload
 
       - name: "💾 Upload AnyKernel3 image => (${{ env.builddate }})"
         uses: actions/upload-artifact@v3
