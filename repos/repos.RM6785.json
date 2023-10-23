@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "Experimento",
+      "name": "Lmao",
       "repo": "https://github.com/shub876/android_kernel_realme_mt6785.git",
       "branch": "lineage-20",
       "device": "RM6785",
@@ -39,7 +39,7 @@
     "AnyKernel3": {
       "use": false,
       "release": false,
-      "repo": "https://github.com/AbzRaider/AnyKernel33",
+      "repo": "https://github.com/shub876/AnyKernel33.git",
       "branch": "lp-rm6785"
     }
   }
