@@ -3,9 +3,9 @@
     "kernelSource": {
       "name": "LMAO",
       "repo": "https://github.com/shub876/android_kernel_realme_nashc.git",
-      "branch": "13.0-new",
+      "branch": "13.0",
       "device": "nashc",
-      "defconfig": "nashc_defconfig"
+      "defconfig": "k85v1_64_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
