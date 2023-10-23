@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "LMAO",
-      "repo": "https://github.com/shub876/realme_8-4G-AndroidT-kernel-source.git",
-      "branch": "master",
-      "device": "nashc",
-      "defconfig": "k6889v1_64_defconfig"
+      "repo": "https://github.com/shub876/kernel_realme_salaa.git",
+      "branch": "lineage-20",
+      "device": "salaa",
+      "defconfig": "k85v1_64_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
