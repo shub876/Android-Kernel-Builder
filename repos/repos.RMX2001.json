@@ -2,16 +2,16 @@
   {
     "kernelSource": {
       "name": "LMAO",
-      "repo": "https://github.com/shub876/android_kernel_realme_RMX2001.git",
-      "branch": "V8",
+      "repo": "https://github.com/shub876/realme6-kernel-source.git",
+      "branch": "master",
       "device": "RMX2001",
-      "defconfig": "RMX2001_defconfig"
+      "defconfig": "oppo6785_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/LeCmnGend/proton-clang.git",
-        "branch": "clang-16",
+        "repo": "https://github.com/Ancient-Project/clang-11.git",
+        "branch": "11.0.0",
         "name": "proton-clang",
         "binPath": ["./bin"]
       }
