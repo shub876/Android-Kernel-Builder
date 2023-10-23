@@ -5,7 +5,7 @@
       "repo": "https://github.com/shub876/realme_8-4G-AndroidT-kernel-source.git",
       "branch": "master",
       "device": "nashc",
-      "defconfig": "k6885v1_64_defconfig"
+      "defconfig": "k6889v1_64_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
