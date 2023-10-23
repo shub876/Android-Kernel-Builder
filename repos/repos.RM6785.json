@@ -2,7 +2,7 @@
   {
     "kernelSource": {
       "name": "Experimento",
-      "repo": "https://github.com/realme-mt6785-devs/android_kernel_realme_mt6785.git",
+      "repo": "https://github.com/shub876/android_kernel_realme_mt6785.git",
       "branch": "lineage-20",
       "device": "RM6785",
       "defconfig": "RM6785_defconfig"
@@ -37,8 +37,8 @@
       }
     },
     "AnyKernel3": {
-      "use": true,
-      "release": true,
+      "use": false,
+      "release": false,
       "repo": "https://github.com/AbzRaider/AnyKernel33",
       "branch": "lp-rm6785"
     }
