@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "Lmao",
       "repo": "https://github.com/shub876/android_kernel_realme_mt6785.git",
-      "branch": "lineage-20",
+      "branch": "lineage-plus",
       "device": "RM6785",
       "defconfig": "RM6785_defconfig"
     },
