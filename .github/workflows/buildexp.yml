@@ -214,7 +214,7 @@ jobs:
           echo "PATH Variable: $PATH"
           make ${{ env.args }} ${{ env.DEFCONFIG_NAME }}
 
-      - name: "🎶 Build kernel"
+      - name: "🎶 Bash Script"
         working-directory: ${{ env.KERNEL_NAME }}
         run: |
           echo "PATH Variable: $PATH"
