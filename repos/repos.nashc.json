@@ -5,7 +5,7 @@
       "repo": "https://github.com/shub876/android_kernel_realme_nashc.git",
       "branch": "lineage-20",
       "device": "nashc",
-      "defconfig": "nashc-lineage_defconfig"
+      "defconfig": "lineage-nashc_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
