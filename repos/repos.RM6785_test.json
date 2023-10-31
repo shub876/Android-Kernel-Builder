@@ -1,0 +1,46 @@
+[
+  {
+    "kernelSource": {
+      "name": "LMAO",
+      "repo": "https://github.com/shub876/android_kernel_realme_mt6785.git",
+      "branch": "lineage-20",
+      "device": "RM6785",
+      "defconfig": "RM6785_defconfig"
+    },
+    "withKernelSU": false,
+    "toolchains": [
+      {
+        "repo": "https://github.com/realme-mt6785-devs/android_prebuilts_clang_host_linux-x86_clang-6443078.git",
+        "branch": "11.0.1",
+        "name": "clang",
+        "binPath": ["./bin"]
+      }
+    ],
+    "ccache": true,
+    "params": {
+      "ARCH": "arm64",
+      "CC": "clang/bin/clang",
+      "externalCommand": {
+        "CROSS_COMPILE": "clang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "clang/bin/arm-linux-gnueabi-",
+        "LD": "clang/bin/ld.lld",
+        "AR": "clang/bin/llvm-ar",
+        "NM": "clang/bin/llvm-nm",
+        "OBJCOPY": "clang/bin/llvm-objcopy",
+        "OBJDUMP": "clang/bin/llvm-objdump",
+        "READELF": "clang/bin/llvm-readelf",
+        "OBJSIZE": "clang/bin/llvm-size",
+        "STRIP": "clang/bin/llvm-strip",
+        "LDGOLD": "clang/bin/aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "clang/bin/llvm-ar",
+        "LLVM_DIS": "clang/bin/llvm-dis"
+      }
+    },
+    "AnyKernel3": {
+      "use": false,
+      "release": false,
+      "repo": "https://github.com/shub876/AnyKernel33.git",
+      "branch": "rm6785"
+    }
+  }
+]
