@@ -1,8 +1,5 @@
 name: "BOB The Kernel Builder"
 
-env:
-  OUT_DIR: "${{ github.workspace }}/out"
-
 on:
   workflow_dispatch:
 
@@ -50,7 +47,6 @@ jobs:
       DEFCONFIG_NAME: ${{ matrix.repos.kernelSource.defconfig }}
 
       withKernelSU: ${{ matrix.repos.withKernelSU }}
-      ccache: ${{ matrix.repos.ccache }}
     steps:
       - name: "⭐ Install prerequisites"
         run: |
@@ -58,24 +54,6 @@ jobs:
           sudo apt-get install -y build-essential bc gcc-aarch64-linux-gnu gcc-arm-linux-gnueabi libssl-dev libfl-dev
           sudo apt-get install -y curl git ftp lftp wget libarchive-tools ccache python2 python2-dev
           sudo apt-get install -y zip unzip tar gzip bzip2 rar unrar
-
-      - name: "🚄 Create cache key from `repos`"
-        if: ${{ env.ccache == 'true' }}
-        id: ccache_key
-        run: |
-          ccache -o compression=false -o cache_dir=$HOME/.ccache
-          echo "CACHE_KEY=$(echo -n '${{ toJSON(matrix.repos) }}' | base64 -w 0 | cut -c -48)" >> $GITHUB_OUTPUT
-
-      - name: "🚅 Cache ccache files"
-        if: ${{ env.ccache == 'true' }}
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.ccache
-            ${{ env.OUT_DIR }}
-          key: ccache-${{ env.KERNEL_NAME }}-${{ steps.ccache_key.outputs.CACHE_KEY }}-${{ env.builddate }}
-          restore-keys: |
-            ccache-${{ env.KERNEL_NAME }}-${{ steps.ccache_key.outputs.CACHE_KEY }}-${{ env.builddate }}
 
       - name: "🌟 Clone kernel source => (${{ env.KERNEL_REPO }})"
         run: |
@@ -107,6 +85,4 @@ jobs:
       - name: "🎶 Bash Script"
         working-directory: ${{ env.KERNEL_NAME }}
         run: |
-          echo "PATH Variable: $PATH"
-          chmod +x build.sh
           bash build.sh
