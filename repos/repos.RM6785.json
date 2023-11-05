@@ -7,7 +7,6 @@
       "device": "RM6785",
       "defconfig": "RM6785_defconfig"
     },
-    "withKernelSU": false,
-    "ccache": true
+    "withKernelSU": false
   }
 ]
