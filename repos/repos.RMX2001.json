@@ -7,7 +7,6 @@
       "device": "RMX2001",
       "defconfig": "RMX2001_defconfig"
     },
-    "withKernelSU": false,
-    "ccache": true
+    "withKernelSU": false
   }
 ]
