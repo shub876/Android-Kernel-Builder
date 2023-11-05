@@ -1,4 +1,4 @@
-name: "Build kernels BOB"
+name: "BOB The Kernel Builder"
 
 env:
   OUT_DIR: "${{ github.workspace }}/out"
@@ -51,8 +51,6 @@ jobs:
 
       withKernelSU: ${{ matrix.repos.withKernelSU }}
       ccache: ${{ matrix.repos.ccache }}
-      useAnykernel: ${{ matrix.repos.AnyKernel3.use }}
-      release: ${{ matrix.repos.AnyKernel3.release }}
     steps:
       - name: "⭐ Install prerequisites"
         run: |
@@ -98,7 +96,7 @@ jobs:
             rm -rf "./drivers/kernelsu"
           fi
 
-          curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
+          curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
 
           echo -e "CONFIG_KPROBES=y" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
           echo -e "CONFIG_HAVE_KPROBES=y" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
