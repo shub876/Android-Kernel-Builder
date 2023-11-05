@@ -1,0 +1,13 @@
+[
+  {
+    "kernelSource": {
+      "name": "LMAO",
+      "repo": "https://github.com/shub876/android_kernel_realme_RMX2001.git",
+      "branch": "V9",
+      "device": "RMX2001",
+      "defconfig": "RMX2001_defconfig"
+    },
+    "withKernelSU": false,
+    "ccache": true
+  }
+]
