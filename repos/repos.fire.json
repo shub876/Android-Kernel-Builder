@@ -1,0 +1,12 @@
+[
+  {
+    "kernelSource": {
+      "name": "LMAO",
+      "repo": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource.git",
+      "branch": "fire-t-oss",
+      "device": "fire",
+      "defconfig": "fire_defconfig"
+    },
+    "withKernelSU": false
+  }
+]
