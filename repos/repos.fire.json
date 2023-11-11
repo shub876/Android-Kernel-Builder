@@ -2,7 +2,7 @@
   {
     "kernelSource": {
       "name": "LMAO",
-      "repo": "https://github.com/shub876/Xiaomi_Kernel_OpenSource.git",
+      "repo": "https://github.com/shub876/android_kernel_xiaomi_fire.git",
       "branch": "fire-t-oss",
       "device": "fire",
       "defconfig": "fire_defconfig"
