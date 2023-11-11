@@ -1,0 +1,12 @@
+[
+  {
+    "kernelSource": {
+      "name": "LMAO",
+      "repo": "https://github.com/shub876/android_kernel_xiaomi_fire.git",
+      "branch": "begonia-r-oss",
+      "device": "begonia",
+      "defconfig": "begonia_user_defconfig"
+    },
+    "withKernelSU": false
+  }
+]
