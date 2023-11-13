@@ -2,7 +2,7 @@
   {
     "kernelSource": {
       "name": "LMAO",
-      "repo": "https://github.com/selene-devs/android_kernel_xiaomi_selene.git",
+      "repo": "https://github.com/shub876/android_kernel_xiaomi_selene.git",
       "branch": "lineage-20",
       "device": "selene",
       "defconfig": "selene_defconfig"
