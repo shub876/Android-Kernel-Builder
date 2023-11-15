@@ -1,0 +1,12 @@
+[
+  {
+    "kernelSource": {
+      "name": "LMAO",
+      "repo": "https://github.com/shub876/android_kernel_realme_nashc.git",
+      "branch": "lineage-20",
+      "device": "nashc",
+      "defconfig": "lineage-nashc_defconfig"
+    },
+    "withKernelSU": false
+  }
+]
