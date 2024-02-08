@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "LMAO",
+      "name": "ECLIPSE",
       "repo": "https://github.com/shub876/android_kernel_realme_mt6785.git",
       "branch": "lineage-21",
       "device": "RM6785",
