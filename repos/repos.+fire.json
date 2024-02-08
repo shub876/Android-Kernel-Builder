@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "LMAO",
+      "name": "ECLIPSE",
       "repo": "https://github.com/shub876/android_kernel_xiaomi_fire.git",
       "branch": "fire-t-oss",
       "device": "fire",
