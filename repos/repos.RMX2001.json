@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "LMAO",
+      "name": "ECLIPSE",
       "repo": "https://github.com/shub876/android_kernel_realme_RMX2001.git",
       "branch": "lineage-18.1",
       "device": "RMX2001",
